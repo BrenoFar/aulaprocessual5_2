@@ -56,13 +56,13 @@ const firstScreenStack = () => (
 const secondScreenStack = () => (
   <SafeAreaView style={{ flex: 1, backgroundColor: '#FEF3B4' }}>
     <NavigationContainer>
-      <Drawer.Navigator
-        drawerContentOptions={{
-          activeTintColor: '#730000',
-          inactiveTintColor: '#730000',
-          itemStyle: { marginVertical: 5 },
-        }}
-      >
+    <Drawer.Navigator
+  screenOptions={{
+    drawerActiveTintColor: '#730000',
+    drawerInactiveTintColor: '#730000',
+    drawerItemStyle: { marginVertical: 5 },
+  }}
+>
         <Drawer.Screen
           name="FirstPage"
           options={{
